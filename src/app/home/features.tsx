@@ -12,9 +12,9 @@ interface FeatureProps {
 
 const Feature = ({ title, text, icon }: FeatureProps) => {
   return (
-    <Stack mt={"-10"}>
+    <Stack mt={"10"}>
       <Flex
-        w={410}
+        w={370}
         h={10}
         align={"center"}
         justify={"center"}
@@ -33,7 +33,7 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 
 export default function SimpleThreeColumns() {
   return (
-    <Box p={10} textAlign="center">
+    <Box p={5} textAlign="center">
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={75}>
         <Feature
           icon={<Icon as={FcAssistant} w={150} h={100} />}

@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Company Profile",
   description: "Warkop Militan",
+  icons: {
+    icon: "/icon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -18,7 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Providers>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          <link rel="icon" href="/icon.ico" sizes="any" />
+          {children}
+        </body>
       </Providers>
     </html>
   );

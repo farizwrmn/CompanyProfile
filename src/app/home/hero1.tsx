@@ -108,8 +108,8 @@ export default function CaptionCarousel() {
                 p={10}
               >
                 <Heading
-                  fontSize={"6xl"}
-                  fontWeight={"1000"}
+                  fontSize={"4xl"}
+                  fontWeight={"800"}
                   color={"Teal"}
                   textAlign={"center"}
                   bgGradient={"linear(to-t, whiteAlpha.800, transparent)"}

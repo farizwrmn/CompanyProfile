@@ -22,7 +22,7 @@ function Candle() {
           borderWidth="1px"
           borderRadius="lg"
           overflow="hidden"
-          m={10}
+          m={1}
         >
           <Image src={property.imageUrl} alt={property.imageAlt} />
 

@@ -25,7 +25,7 @@ function Coffee3Card() {
           borderWidth="1px"
           borderRadius="lg"
           overflow="hidden"
-          m={10}
+          m={0}
         >
           <Image src={property.imageUrl} alt={property.imageAlt} />
 

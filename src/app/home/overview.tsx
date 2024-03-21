@@ -8,12 +8,13 @@ import {
   Button,
   Stack,
   Link,
+  Divider,
 } from "@chakra-ui/react";
 
 export default function CallToActionWithAnnotation() {
   return (
     <>
-      <Container maxW={"3xl"} mt={-20}>
+      <Container maxW={"3xl"} mt={-20} mb={-20}>
         <Stack
           as={Box}
           textAlign={"center"}
@@ -78,6 +79,7 @@ export default function CallToActionWithAnnotation() {
           </Stack>
         </Stack>
       </Container>
+      <Divider />
     </>
   );
 }
