@@ -60,7 +60,7 @@ export default function CaptionCarousel() {
       title: "Celebrate Holiday with Theme",
       text: "Everyone gathers here when its Holiday because we always have Holiday Discounts.. Stay Tuned!.",
       image:
-        "https://images.unsplash.com/photo-1508766917616-d22f3f1eea14?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1710880694444-970aaf7e7f97?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8",
     },
   ];
 
@@ -82,38 +82,12 @@ export default function CaptionCarousel() {
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
-      {/* Left Icon */}
-      <IconButton
-        aria-label="left-arrow"
-        variant="solid"
-        position="absolute"
-        left={side}
-        top={top}
-        transform={"translate(0%, -50%)"}
-        zIndex={2}
-        onClick={() => slider?.slickPrev()}
-      >
-        <BiLeftArrowAlt size="40px" />
-      </IconButton>
-      {/* Right Icon */}
-      <IconButton
-        aria-label="right-arrow"
-        variant="solid"
-        position="absolute"
-        right={side}
-        top={top}
-        transform={"translate(0%, -50%)"}
-        zIndex={2}
-        onClick={() => slider?.slickNext()}
-      >
-        <BiRightArrowAlt size="40px" />
-      </IconButton>
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
           <Box
             key={index}
-            height={"6xl"}
+            height={"1xl"}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
@@ -123,11 +97,11 @@ export default function CaptionCarousel() {
             {/* This is the block you need to change, to customize the caption */}
             <Container size="box.lg" height="600px" position="relative">
               <Stack
-                spacing={6}
+                spacing={0}
                 w={"full"}
                 maxW={"lg"}
                 position="absolute"
-                top="60%"
+                top="53%"
                 transform="translate(0, -50%)"
                 bgGradient={"linear(to-b, whiteAlpha.800, transparent)"}
                 borderRadius={"20"}

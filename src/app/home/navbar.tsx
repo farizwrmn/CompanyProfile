@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link as ChakraLink } from "@chakra-ui/react";
 import Image, { StaticImageData } from "next/image";
 import {
   Box,
@@ -13,40 +13,44 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-interface Props {
-  children: React.ReactNode;
-}
-
 interface NavbarProps {
   brandName: string;
   imageSrcPath: string | StaticImageData;
 }
 
-const Links = ["About Us", "Products", "Teams"];
+const Links = [
+  {
+    title: "About Us",
+    url: "/About",
+  },
+  {
+    title: "Products",
+    url: "/Products",
+  },
+  {
+    title: "Teams",
+    url: "/About#Teams",
+  },
+];
 
-const NavLink = (props: Props) => {
-  const { children } = props;
-
+function NavLink({ title, url }: { title: string; url: string }) {
   return (
-    <Box
-      as="a"
-      px={3}
-      py={3}
-      rounded={"md"}
-      _hover={{
-        textDecoration: "none",
-        bg: useColorModeValue("gray.300", "gray.700"),
-      }}
-      href={
-        ((Links[0] = <Link href="/About">About us</Link>),
-        (Links[1] = <Link href="/Products">Products</Link>),
-        (Links[2] = <Link href="/About#Teams">Teams</Link>))
-      }
-    >
-      {children}
-    </Box>
+    <div>
+      <ChakraLink
+        href={url}
+        px={3}
+        py={3}
+        rounded={"md"}
+        _hover={{
+          textDecoration: "none",
+          bg: useColorModeValue("teal.300", "gray.700"),
+        }}
+      >
+        {title}
+      </ChakraLink>
+    </div>
   );
-};
+}
 
 export default function Simple({ brandName, imageSrcPath }: NavbarProps) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -64,9 +68,9 @@ export default function Simple({ brandName, imageSrcPath }: NavbarProps) {
           />
           <HStack spacing={1030} alignItems={"right"}>
             <Box ml={14}>
-              <Link href="/">
+              <ChakraLink href="/">
                 <Image src={imageSrcPath} width="34" height="10" alt="Logo" />
-              </Link>
+              </ChakraLink>
             </Box>
             <HStack
               as={"nav"}
@@ -74,7 +78,7 @@ export default function Simple({ brandName, imageSrcPath }: NavbarProps) {
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink title={link.title} url={link.url} />
               ))}
             </HStack>
           </HStack>
@@ -82,9 +86,9 @@ export default function Simple({ brandName, imageSrcPath }: NavbarProps) {
 
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
-            <Stack as={"nav"} spacing={4}>
+            <Stack as={"nav"} spacing={10} textAlign={"center"}>
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink title={link.title} url={link.url} />
               ))}
             </Stack>
           </Box>

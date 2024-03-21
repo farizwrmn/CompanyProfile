@@ -15,7 +15,7 @@ const settings = {
   infinite: true,
   autoplay: true,
   speed: 500,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 4500,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -90,7 +90,7 @@ export default function Carousel() {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={"2xl"}
+            height={"4xl"}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"

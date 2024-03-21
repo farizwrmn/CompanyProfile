@@ -1,12 +1,14 @@
 import { Divider, Image } from "@chakra-ui/react";
 import { Box, Badge, Text } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
+import { Button, Slide, useDisclosure } from "@chakra-ui/react";
 
 function CoffeeCard() {
+  const { isOpen, onToggle } = useDisclosure();
   const property = {
     imageUrl:
       "https://images.unsplash.com/photo-1563382931489-e77a18817459?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29mZmVlJTIwcGFja2FnaW5nfGVufDB8fDB8fHww",
-    imageAlt: "Rear view of modern home with pool",
+    imageAlt: "Ground Coffee",
     acid: "3/5",
     flavour: "5/5",
     title: "Butterscreek Ground Coffee",
@@ -79,6 +81,36 @@ function CoffeeCard() {
               <Box as="span" ml="2" color="gray.600" fontSize="sm">
                 {property.reviewCount} reviews
               </Box>
+            </Box>
+            <Box ml={270}>
+              <Button onClick={onToggle} rounded={"full"}>
+                Detail
+              </Button>
+              <Slide direction="bottom" in={isOpen} style={{ zIndex: 100 }}>
+                <Box
+                  p="50px"
+                  color="white"
+                  mt="1"
+                  bg="teal.500"
+                  rounded="md"
+                  shadow="md"
+                >
+                  <Box>
+                    <Button
+                      alignContent={"center"}
+                      onClick={onToggle}
+                      rounded={"full"}
+                    >
+                      X
+                    </Button>
+                  </Box>
+                  <Image
+                    src={property.imageUrl}
+                    alt={property.imageAlt}
+                    rounded={"md"}
+                  />
+                </Box>
+              </Slide>
             </Box>
           </Box>
         </Box>

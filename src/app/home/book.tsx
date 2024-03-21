@@ -48,9 +48,9 @@ export default function Contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading>Book your table, now!</Heading>
+                  <Heading>Book your table..</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
-                    Fill up the form below to book our place
+                    Fill up the form or Contact us by clicking information below
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack pl={0} spacing={3} alignItems="flex-start">
@@ -97,7 +97,7 @@ export default function Contact() {
                 <Box bg="white" borderRadius="lg" textAlign={"center"}>
                   <Box m={12} color="#0B0E3F">
                     <VStack spacing={5}>
-                      <FormControl id="name">
+                      <FormControl id="name" isRequired>
                         <FormLabel>Your Name</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement pointerEvents="none">
@@ -107,10 +107,11 @@ export default function Contact() {
                             type="text"
                             size="md"
                             placeholder="Andrew Jackson"
+                            required
                           />
                         </InputGroup>
                       </FormControl>
-                      <FormControl id="name">
+                      <FormControl id="name" isRequired>
                         <FormLabel>Mail</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement pointerEvents="none">
@@ -120,17 +121,20 @@ export default function Contact() {
                             type="text"
                             size="md"
                             placeholder="Andrew@live.com"
+                            required
                           />
                         </InputGroup>
                       </FormControl>
-                      <FormControl id="name">
+                      <FormControl id="name" isRequired>
                         <FormLabel>Message</FormLabel>
                         <Textarea
                           borderColor="gray.300"
                           _hover={{
                             borderRadius: "gray.300",
                           }}
-                          placeholder="message"
+                          placeholder="I want to book for .. person(s) on ...
+                          "
+                          required
                         />
                       </FormControl>
                       <FormControl id="name" float="right">
@@ -138,10 +142,11 @@ export default function Contact() {
                           variant="solid"
                           bg="#0D74FF"
                           color="white"
-                          _hover={{}}
+                          _hover={{ bg: "blue.700" }}
                           onClick={() =>
                             alert(`Terimakasih akan kami proses :)`)
                           }
+                          aria-required
                         >
                           Send Message
                         </Button>

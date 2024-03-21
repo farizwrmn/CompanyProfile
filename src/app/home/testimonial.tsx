@@ -107,6 +107,7 @@ export default function WithSpeechBubbles() {
       <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
           <Heading>Our Customers Experience</Heading>
+          <Divider />
           <br />
         </Stack>
         <Stack
@@ -115,10 +116,11 @@ export default function WithSpeechBubbles() {
         >
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Efficient Collaborating</TestimonialHeading>
+              <TestimonialHeading>Efficient Spacing</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                The space in Warkop Militan is sufficiently cozy, not to close
+                to other table, close to the provided restroom and easy to
+                access. This is amazing!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -131,10 +133,12 @@ export default function WithSpeechBubbles() {
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Intuitive Design</TestimonialHeading>
+              <TestimonialHeading>Intuitive Interior Design</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                The theme here is modern nature, makes me enjoy working here,
+                the ambients really brings out the special things about this
+                place. Not to mention the food and beverages that outta this
+                world!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -149,8 +153,9 @@ export default function WithSpeechBubbles() {
             <TestimonialContent>
               <TestimonialHeading>Mindblowing Service</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                I don't get it why they are working so fast in this environment
+                my coffee is served right away after I ordered and it still
+                taste amazing!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar

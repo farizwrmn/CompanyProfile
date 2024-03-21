@@ -1,6 +1,5 @@
 import SimpleThreeColumns from "./home/features";
 import Carousel from "./home/gallery";
-import WithBackgroundImage from "./home/hero";
 import Navbar from "./home/navbar";
 import Contact from "./home/book";
 import SmallWithSocial from "./home/footer";
