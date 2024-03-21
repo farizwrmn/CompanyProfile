@@ -17,13 +17,7 @@ function Candle() {
   return (
     <>
       <Box display="inline-flex" flexWrap="wrap">
-        <Box
-          maxW="sm"
-          borderWidth="1px"
-          borderRadius="lg"
-          overflow="hidden"
-          m={1}
-        >
+        <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
           <Image src={property.imageUrl} alt={property.imageAlt} />
 
           <Box p="6">
@@ -69,11 +63,12 @@ function Candle() {
               as="h4"
               lineHeight="tight"
               noOfLines={1}
+              textAlign={"left"}
             >
               {property.title}
             </Box>
 
-            <Box>
+            <Box textAlign={"left"}>
               {property.formattedPrice}
               <Box as="span" color="gray.600" fontSize="sm">
                 / Pcs

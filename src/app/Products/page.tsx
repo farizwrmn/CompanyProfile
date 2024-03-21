@@ -10,13 +10,20 @@ import Tea from "./items/tea";
 import Latte from "./items/latte";
 import Candle from "./items/candles";
 import Mug from "./items/mug";
-import { Box, Center } from "@chakra-ui/react";
+import { Box, Text, Divider } from "@chakra-ui/react";
 
 export default function Products() {
   return (
     <>
       <Navbar brandName="" imageSrcPath={logo} />
-      <Box>
+
+      <Text textAlign="center" fontSize="xl" fontWeight={1000} p={20}>
+        Our Products
+        <br />
+        <br />
+        <Divider />
+      </Text>
+      <Box textAlign={"center"}>
         <CoffeeCard />
         <Coffee1Card />
         <Coffee2Card />

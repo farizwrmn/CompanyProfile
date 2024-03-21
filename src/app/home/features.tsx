@@ -14,7 +14,7 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
   return (
     <Stack mt={"10"}>
       <Flex
-        w={370}
+        w={360}
         h={10}
         align={"center"}
         justify={"center"}

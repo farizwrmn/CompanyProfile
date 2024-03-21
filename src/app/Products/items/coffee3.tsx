@@ -20,13 +20,7 @@ function Coffee3Card() {
   return (
     <>
       <Box display="inline-flex" flexWrap="wrap">
-        <Box
-          maxW="sm"
-          borderWidth="1px"
-          borderRadius="lg"
-          overflow="hidden"
-          m={0}
-        >
+        <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
           <Image src={property.imageUrl} alt={property.imageAlt} />
 
           <Box p="6">
@@ -49,11 +43,12 @@ function Coffee3Card() {
               as="h4"
               lineHeight="tight"
               noOfLines={1}
+              textAlign={"left"}
             >
               {property.title}
             </Box>
 
-            <Box>
+            <Box textAlign={"left"}>
               {property.formattedPrice}
               <Box as="span" color="gray.600" fontSize="sm">
                 / Pcs
