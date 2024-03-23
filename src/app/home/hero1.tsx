@@ -3,15 +3,11 @@
 import React from "react";
 import {
   Box,
-  IconButton,
   useBreakpointValue,
   Stack,
   Heading,
   Text,
   Container,
-  Button,
-  Link,
-  Center,
 } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
@@ -105,14 +101,13 @@ export default function CaptionCarousel() {
                 transform="translate(0, -50%)"
                 bgGradient={"linear(to-b, whiteAlpha.800, transparent)"}
                 borderRadius={"20"}
-                p={10}
+                p={5}
               >
                 <Heading
                   fontSize={"4xl"}
                   fontWeight={"800"}
                   color={"Teal"}
                   textAlign={"center"}
-                  bgGradient={"linear(to-t, whiteAlpha.800, transparent)"}
                   borderRadius={"20"}
                   p={5}
                 >
@@ -120,10 +115,10 @@ export default function CaptionCarousel() {
                 </Heading>
                 <Text
                   fontSize={{ base: "2xl", lg: "3xl" }}
-                  fontWeight={"300"}
-                  color="darkblue"
+                  fontWeight={"400"}
+                  color="darkgreen"
                   textAlign={"justify"}
-                  bgGradient={"linear(to-b, whiteAlpha.800, transparent)"}
+                  bgGradient={"linear(to-t, whiteAlpha.800, transparent)"}
                   p={5}
                   borderRadius={"md"}
                 >
