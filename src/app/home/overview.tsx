@@ -74,7 +74,7 @@ export default function CallToActionWithAnnotation() {
                 textDecoration: "none",
               }}
             >
-              <Link href="/About">Learn more</Link>
+              <Link href="/About">Learn more About us</Link>
             </Button>
           </Stack>
         </Stack>
