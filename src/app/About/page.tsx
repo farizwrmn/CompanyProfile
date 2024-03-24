@@ -6,11 +6,7 @@ import {
   Stack,
   Text,
   useColorModeValue,
-  Card,
-  CardBody,
-  Heading,
   Divider,
-  Image,
 } from "@chakra-ui/react";
 import Navbar from "../home/navbar";
 import logo from "../img/cup.png";

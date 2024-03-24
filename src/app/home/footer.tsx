@@ -9,12 +9,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import {
-  FaInstagram,
-  FaLocationArrow,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaInstagram, FaLocationArrow, FaTwitter } from "react-icons/fa";
 import { ReactNode } from "react";
 
 const SocialButton = ({
