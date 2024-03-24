@@ -106,7 +106,7 @@ export default function Contact() {
                           <Input
                             type="text"
                             size="md"
-                            placeholder="Andrew Jackson"
+                            placeholder="Your Fullname"
                             required
                           />
                         </InputGroup>
@@ -120,7 +120,7 @@ export default function Contact() {
                           <Input
                             type="text"
                             size="md"
-                            placeholder="Andrew@live.com"
+                            placeholder="Your Email"
                             required
                           />
                         </InputGroup>
@@ -146,7 +146,6 @@ export default function Contact() {
                           onClick={() =>
                             alert(`Terimakasih akan kami proses :)`)
                           }
-                          aria-required
                         >
                           Send Message
                         </Button>
