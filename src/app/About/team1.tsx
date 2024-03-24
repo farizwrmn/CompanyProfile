@@ -1,5 +1,3 @@
-// pages/index.tsx
-
 import {
   Avatar,
   Stack,
@@ -8,7 +6,7 @@ import {
   CardBody,
   Heading,
   Divider,
-} from "@chakra-ui/react"; // pages/index.tsx
+} from "@chakra-ui/react";
 
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -43,10 +41,7 @@ const IndexPage = () => {
 
     fetchRandomUsers();
 
-    // Clean up function to cancel the request (if necessary)
-    return () => {
-      // cancel request or cleanup as needed
-    };
+    return () => {};
   }, []);
 
   return (

@@ -3,8 +3,6 @@
 import React from "react";
 import { Box, Stack, Heading, Container } from "@chakra-ui/react";
 import Slider from "react-slick";
-
-// Settings for the slider
 const settings = {
   dots: true,
   arrows: false,
@@ -18,12 +16,7 @@ const settings = {
 };
 
 export default function CaptionCarousel() {
-  // As we have used custom buttons, we need a reference variable to
-  // change the state
   const [slider, setSlider] = React.useState<Slider | null>(null);
-
-  // This list contains all the data for carousels
-  // This can be static or loaded from a server
   const cards = [
     {
       title: "We deliver great foods at all cost!",
@@ -49,7 +42,6 @@ export default function CaptionCarousel() {
       width={"full"}
       overflow={"hidden"}
     >
-      {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
         type="text/css"
@@ -60,7 +52,6 @@ export default function CaptionCarousel() {
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
-      {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
           <Box
@@ -72,7 +63,6 @@ export default function CaptionCarousel() {
             backgroundSize="cover"
             backgroundImage={`url(${card.image})`}
           >
-            {/* This is the block you need to change, to customize the caption */}
             <Container size="box.lg" height="600px" position="relative">
               <Stack
                 spacing={0}
