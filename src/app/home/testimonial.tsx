@@ -129,6 +129,7 @@ export default function WithSpeechBubbles() {
               }
               name={"Jane Cooper"}
               title={"COO at ABC Corporation"}
+              alt="Jane Cooper"
             />
           </Testimonial>
           <Testimonial>
@@ -147,6 +148,7 @@ export default function WithSpeechBubbles() {
               }
               name={"Dorothy Aridan"}
               title={"PM at AAC Corporation"}
+              alt="Dorothy Aridan"
             />
           </Testimonial>
           <Testimonial>
@@ -164,6 +166,7 @@ export default function WithSpeechBubbles() {
               }
               name={"Gill Dollar"}
               title={"Team Leader at SiPecat"}
+              alt="Gill Dollar"
             />
           </Testimonial>
         </Stack>
