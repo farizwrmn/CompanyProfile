@@ -14,7 +14,7 @@ import {
 export default function CallToActionWithAnnotation() {
   return (
     <>
-      <Container maxW={"3xl"} mt={-20} mb={-20}>
+      <Container maxW={"3xl"} mt={-20}>
         <Stack
           as={Box}
           textAlign={"center"}
@@ -24,12 +24,13 @@ export default function CallToActionWithAnnotation() {
           <Heading
             fontWeight={600}
             fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
-            lineHeight={"110%"}
+            lineHeight={"120%"}
             color={"green.400"}
+            fontFamily={"Gill sans"}
           >
             Why us?
             <br />
-            <Text as={"span"} color={"blue.400"}>
+            <Text as={"span"} color={"blue.400"} fontFamily={"Gill sans"}>
               @ Warkop Militan
             </Text>
           </Heading>

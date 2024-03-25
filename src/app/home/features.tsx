@@ -12,7 +12,7 @@ interface FeatureProps {
 
 const Feature = ({ title, text, icon }: FeatureProps) => {
   return (
-    <Stack mt={"10"}>
+    <Stack mt={"10"} alignItems={"center"}>
       <Flex
         w={360}
         h={10}

@@ -112,7 +112,7 @@ export default function Contact() {
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name" isRequired>
-                        <FormLabel>E=Mail</FormLabel>
+                        <FormLabel>E-Mail</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement pointerEvents="none">
                             <MdOutlineEmail color="gray.800" />

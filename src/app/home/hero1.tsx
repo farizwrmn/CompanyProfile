@@ -81,6 +81,7 @@ export default function CaptionCarousel() {
                   textAlign={"center"}
                   borderRadius={"20"}
                   p={5}
+                  fontFamily={"Gill sans"}
                   bgGradient={"linear(to-t, whiteAlpha.800, transparent)"}
                 >
                   {card.title}
